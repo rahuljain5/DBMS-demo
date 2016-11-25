@@ -1,2 +1,2 @@
 # my-repo
-THIS repository contains codes that i write.
+For the codes that i write! 
