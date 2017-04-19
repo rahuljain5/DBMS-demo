@@ -1,0 +1,28 @@
+https://github.com/rahuljain5/my-repo/master/2
+ ~begginers guide for linux users~
+
+*The .php file should be run on a server as php needs server for processing.*
+
+*Corresponding changes have to be made into the php file in accordance with the database in use.*
+
+*The databases should be made in mysql and appropriately mentioned in the php file.*  
+
+*For windows based systems download WAMP or XAMPP for windows(the path for the files might be different).*
+
+
+Using XAMPP as a server would be a convinient way to run the files.
+
+ -place the html,css,js and php files into the folder /opt/lampp/htdocs.
+
+ -create a database using phpmyadmin on the XAMPP application page.
+
+ -create all tables,insert values and also choose user privileges if needed.
+
+note:default privileges set to username:root,no password.
+
+ -on linux systems turn on apache2 server along with mysqlserver and proftpd server(manage servers tab)
+
+ -once all this is done use OPEN APPLICATION FOLDER option from XAMPP window browse to the html file and open it. 
+
+ -For tables and values refer the manual enclosed.
+
