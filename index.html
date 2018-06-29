@@ -1,317 +1,408 @@
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="cr.css" rel="stylesheet"></link>
-<script src="cr.js" ></script>
+<link href="main.css" rel="stylesheet"></link>
+<script src="main.js"></script>
 <title>something related to dbms</title>
-<body >
-<div id="d1">
-<marquee><h1 id="head1">*<u>DATABASE MANAGEMENT SYSTEM LAB</u>*</h1></marquee>
-</div>
 
-<div id="anime">
-</div>
-<br/>
-<!--<button class="button1" onmouseover="this.style.height='200px'; this.style.width='200px'" width="100px" onmouseout="this.style.height='100px'; this.style.width='100px'">yayy</button>
+<body>
+	<div id="d1">
+		<marquee>
+			<h1 id="head1">*
+				<u>DATABASE MANAGEMENT SYSTEM LAB</u>*</h1>
+		</marquee>
+	</div>
+
+	<div id="anime">
+	</div>
+	<br/>
+	<!--<button class="button1" onmouseover="this.style.height='200px'; this.style.width='200px'" width="100px" onmouseout="this.style.height='100px'; this.style.width='100px'">yayy</button>
 <img id="img1" src="Screenshot from 2016-10-31 15-55-33.png" width="360px" onmouseover="this.style.width='500px'" onmouseout="this.style.width='360px'"></img>-->
-<div class="d2">
-<h2>EXERCISE 1</h2>
-<h2>Student DB <button class="quest" onclick="quer(1)"><b>? </b></button></h2>
-<button class="button1" id="q1" name="e1q1" onclick=my('q1')>Query1</button>&nbsp
-<button class="button1" id="q2" name="e1q2" onclick=my('q2')>Query2</button>&nbsp
-<button class="button1" id="q3" name="e1q3" onclick=my('q3')>Query3</button>&nbsp
-<button class="button1" id="q4" name="e1q4" onclick=my('q4')>Query4</button>&nbsp
-</div>
-<div class="d3">
-<h3 id="h31">Query box</h3>
-<form method="post" action="process.php">
-<textarea id="1ip" word-wrap="break-word" autocomplete="off" class="ipc" min=0 max=300 size="400" type="text" placeholder="Enter Query Here" name="ex1" ></textarea>
-<button class="submit1" value="submit" >submit</button>
-</form>
-</div>
-<br/>
-<div class="d2">
-<h2>EXERCISE 2</h2>
-<h2>Airline DB <button class="quest" onclick="quer(2)"><b>? </b></button></h2>
-<button class="button1" id="2q1" onclick=mya('q1')>Query1</button>
-<button class="button1" id="2q2" onclick=mya('q2')>Query2</button>
-<button class="button1" id="2q3" onclick=mya('q3')>Query3</button>
-<button class="button1" id="2q4" onclick=mya('q4')>Query4</button>
-<button class="button1" id="2q5" onclick=mya('q5')>Query5</button>
-<button class="button1" id="2q6" onclick=mya('q6')>Query6</button>
-</div>
-<div class="d3">
-<h3 id="h31">Query box</h3>
-<form method="post">
-<textarea id="ip2" class="ipc" min=0 max=300 size="400" autocomplete="off" type="text"  placeholder="Enter Query Here" name="ex2" ></textarea>
-<button class="submit1" value="submit" action="submit" >submit</button>
-</form>
-</div>
-<div class="d2">
-<h2>EXERCISE 3</h2>
-<h2>Student-Enrollment DB <button class="quest" onclick="quer(3)"><b>? </b></button></h2>
-<button class="button1" id="q4" onclick=myb('q4')>Query4</button>&nbsp
-<button class="button1" id="q5" onclick=myb('q5')>Query5</button>&nbsp
-</div>
-<div class="d3">
-<h3 id="h31">Query box</h3>
-<form method="post">
-<textarea id="3ip" word-wrap="break-word" class="ipc" min=0 max=300 size="400" autocomplete="off" type="text" placeholder="Enter Query Here" name="ex3"></textarea>
-<button class="submit1" value="submit" >submit</button>
-</form>
-</div>
-<div class="d2">
-<h2>EXERCISE 4</h2>
-<h2>Book-Dealer DB <button class="quest" onclick="quer(4)"><b>? </b></button></h2>
-<button class="button1" id="q1" onclick=myc('q3')>Query3</button>&nbsp
-<button class="button1" id="q2" onclick=myc('q4')>Query4</button>&nbsp
-<button class="button1" id="q3" onclick=myc('q5')>Query5</button>&nbsp
-</div>
-<div class="d3">
-<h3 id="h31">Query box</h3>
-<form method="post">
-<textarea id="4ip" word-wrap="break-word" class="ipc" min=0 max=300 size="400" autocomplete="off" type="text" placeholder="Enter Query Here" name="ex4"></textarea>
-<button class="submit1" value="submit" >submit</button>
-</form>
-</div>
-<div class="d2">
-<h2>EXERCISE 5</h2>
-<h2>BANK DB <button class="quest" onclick="quer(5)"><b>? </b></button></h2>
-<button class="button1" id="q3" onclick=myd('q1')>Query3</button>&nbsp
-<button class="button1" id="q4" onclick=myd('q4')>Query4</button>&nbsp
-<button class="button1" id="q5" onclick=myd('q5')>Query5</button>&nbsp
-</div>
-<div class="d3">
-<h3 id="h31">Query box</h3>
-<form method="post">
-<textarea id="5ip" word-wrap="break-word" class="ipc" min=0 max=300 size="400" type="text" autocomplete="off" placeholder="Enter Query Here" name="ex5"></textarea>
-<button class="submit1" value="submit" >submit</button>
-</form>
-</div>
-<div id="question-modal">
-<span id="close">CLOSE(X)</span>
-<div class="modal-content" id="modal-content1">
-<h1 align="center">Student database</h1>
-<h3>STUDENT</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<td><th id="table">SNUM</th></td>
-	<td><th id="table">SNAME</th></td>
-	<td><th id="table">MAJOR</th></td>
-	<td><th id="table">LEVEL</th></td>
-	<td><th id="table">AGE</th></td>
-</tr>
-</table>
-<h3>CLASS</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">NAME</th>
-	<th id="table">MEETSAT</th>
-	<th id="table">ROOM</th>
-	<th id="table">FID</th>
-</tr>
-</table>
-<h3>ENROLLED</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">SNUM</th>
-	<th id="table">CNAME</th>
-</tr>
-</table>
-<h3>FACULTY</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">FID</th>
-	<th id="table">FNAME</th>
-	<th id="table">DEPTID</th>
-</tr>
-</table>
-<br/>
-</div>
-<div class="modal-content" id="modal-content2">
-<h1 align="center">airline database</h1>
-<h3>FLIGHTS</h3>
- <table id="table" style="width:100%" >
-<tr>
-   	<td><th id="table">no</th></td>
-	<td><th id="table">from</th></td>
-	<td><th id="table">to</th></td>
-	<td><th id="table">distance</th></td>
-	<td><th id="table">departs</th></td><td><th id="table">arrives</th></td><td><th id="table">price</th></td>
-</tr>
-</table>
-<h3>AIRCRAFT</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">aid</th>
-	<th id="table">aname</th>
-	<th id="table">cruisingrange</th>
-</tr>
-</table>
-<h3>CERTIFIED</h3>
- <table id="table" style="width:100%" >
-<tr>
-   	<th id="table">eid</th>
-	<th id="table">aid</th>
-</tr>
-</table>
-<h3>EMPLOYEES</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">eid</th>
-	<th id="table">ename</th>
-	<th id="table">salary</th>
-</tr>
-</table>
-<br/>
-</div>
-<div class="modal-content" id="modal-content3">
-<h1 align="center">Student-Enrollment database</h1>
-<h3>STUDENT</h3> 
+	<div class="d2">
+		<h2>EXERCISE 1</h2>
+		<h2>Student DB
+			<button class="quest" onclick="quer(1)">
+				<b>? </b>
+			</button>
+		</h2>
+		<button class="button1" id="q1" name="e1q1" onclick="my('q1')">Query1</button>&nbsp
+		<button class="button1" id="q2" name="e1q2" onclick="my('q2')">Query2</button>&nbsp
+		<button class="button1" id="q3" name="e1q3" onclick="my( 'q3')">Query3</button>&nbsp
+		<button class="button1" id="q4" name="e1q4" onclick="my( 'q4')">Query4</button>&nbsp
+	</div>
+	<div class="d3">
+		<h3 id="h31">Query box</h3>
+		<form method="post" action="process.php">
+			<textarea id="1ip" word-wrap="break-word" autocomplete="off" class="ipc" min=0 max=300 size="400" type="text" placeholder="Enter Query Here"
+			    name="ex1"></textarea>
+			<button class="submit1" value="submit">submit</button>
+		</form>
+	</div>
+	<br/>
+	<div class="d2">
+		<h2>EXERCISE 2</h2>
+		<h2>Airline DB
+			<button class="quest" onclick="quer(2)">
+				<b>? </b>
+			</button>
+		</h2>
+		<button class="button1" id="2q1" onclick="mya( 'q1')">Query1</button>
+		<button class="button1" id="2q2" onclick="mya( 'q2')">Query2</button>
+		<button class="button1" id="2q3" onclick="mya( 'q3')">Query3</button>
+		<button class="button1" id="2q4" onclick="mya( 'q4')">Query4</button>
+		<button class="button1" id="2q5" onclick="mya( 'q5')">Query5</button>
+		<button class="button1" id="2q6" onclick="mya( 'q6')">Query6</button>
+	</div>
+	<div class="d3">
+		<h3 id="h31">Query box</h3>
+		<form method="post">
+			<textarea id="ip2" class="ipc" min=0 max=300 size="400" autocomplete="off" type="text" placeholder="Enter Query Here" name="ex2"></textarea>
+			<button class="submit1" value="submit" action="submit">submit</button>
+		</form>
+	</div>
+	<div class="d2">
+		<h2>EXERCISE 3</h2>
+		<h2>Student-Enrollment DB
+			<button class="quest" onclick="quer(3)">
+				<b>? </b>
+			</button>
+		</h2>
+		<button class="button1" id="q4" onclick="myb( 'q4')">Query4</button>&nbsp
+		<button class="button1" id="q5" onclick="myb( 'q5')">Query5</button>&nbsp
+	</div>
+	<div class="d3">
+		<h3 id="h31">Query box</h3>
+		<form method="post">
+			<textarea id="3ip" word-wrap="break-word" class="ipc" min=0 max=300 size="400" autocomplete="off" type="text" placeholder="Enter Query Here"
+			    name="ex3"></textarea>
+			<button class="submit1" value="submit">submit</button>
+		</form>
+	</div>
+	<div class="d2">
+		<h2>EXERCISE 4</h2>
+		<h2>Book-Dealer DB
+			<button class="quest" onclick="quer(4)">
+				<b>? </b>
+			</button>
+		</h2>
+		<button class="button1" id="q1" onclick="myc( 'q3')">Query3</button>&nbsp
+		<button class="button1" id="q2" onclick="myc( 'q4')">Query4</button>&nbsp
+		<button class="button1" id="q3" onclick="myc( 'q5')">Query5</button>&nbsp
+	</div>
+	<div class="d3">
+		<h3 id="h31">Query box</h3>
+		<form method="post">
+			<textarea id="4ip" word-wrap="break-word" class="ipc" min=0 max=300 size="400" autocomplete="off" type="text" placeholder="Enter Query Here"
+			    name="ex4"></textarea>
+			<button class="submit1" value="submit">submit</button>
+		</form>
+	</div>
+	<div class="d2">
+		<h2>EXERCISE 5</h2>
+		<h2>BANK DB
+			<button class="quest" onclick="quer(5)">
+				<b>? </b>
+			</button>
+		</h2>
+		<button class="button1" id="q3" onclick="myd( 'q1')">Query3</button>&nbsp
+		<button class="button1" id="q4" onclick="myd( 'q4')">Query4</button>&nbsp
+		<button class="button1" id="q5" onclick="myd( 'q5')">Query5</button>&nbsp
+	</div>
+	<div class="d3">
+		<h3 id="h31">Query box</h3>
+		<form method="post">
+			<textarea id="5ip" word-wrap="break-word" class="ipc" min=0 max=300 size="400" type="text" autocomplete="off" placeholder="Enter Query Here"
+			    name="ex5"></textarea>
+			<button class="submit1" value="submit">submit</button>
+		</form>
+	</div>
+	<div id="question-modal">
+		<span id="close">CLOSE(X)</span>
+		<div class="modal-content" id="modal-content1">
+			<h1 align="center">Student database</h1>
+			<h3>STUDENT</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<td>
+						<th id="table">SNUM</th>
+					</td>
+					<td>
+						<th id="table">SNAME</th>
+					</td>
+					<td>
+						<th id="table">MAJOR</th>
+					</td>
+					<td>
+						<th id="table">LEVEL</th>
+					</td>
+					<td>
+						<th id="table">AGE</th>
+					</td>
+				</tr>
+			</table>
+			<h3>CLASS</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">NAME</th>
+					<th id="table">MEETSAT</th>
+					<th id="table">ROOM</th>
+					<th id="table">FID</th>
+				</tr>
+			</table>
+			<h3>ENROLLED</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">SNUM</th>
+					<th id="table">CNAME</th>
+				</tr>
+			</table>
+			<h3>FACULTY</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">FID</th>
+					<th id="table">FNAME</th>
+					<th id="table">DEPTID</th>
+				</tr>
+			</table>
+			<br/>
+		</div>
+		<div class="modal-content" id="modal-content2">
+			<h1 align="center">airline database</h1>
+			<h3>FLIGHTS</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<td>
+						<th id="table">no</th>
+					</td>
+					<td>
+						<th id="table">from</th>
+					</td>
+					<td>
+						<th id="table">to</th>
+					</td>
+					<td>
+						<th id="table">distance</th>
+					</td>
+					<td>
+						<th id="table">departs</th>
+					</td>
+					<td>
+						<th id="table">arrives</th>
+					</td>
+					<td>
+						<th id="table">price</th>
+					</td>
+				</tr>
+			</table>
+			<h3>AIRCRAFT</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">aid</th>
+					<th id="table">aname</th>
+					<th id="table">cruisingrange</th>
+				</tr>
+			</table>
+			<h3>CERTIFIED</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">eid</th>
+					<th id="table">aid</th>
+				</tr>
+			</table>
+			<h3>EMPLOYEES</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">eid</th>
+					<th id="table">ename</th>
+					<th id="table">salary</th>
+				</tr>
+			</table>
+			<br/>
+		</div>
+		<div class="modal-content" id="modal-content3">
+			<h1 align="center">Student-Enrollment database</h1>
+			<h3>STUDENT</h3>
 
- <table id="table" style="width:100%" >
-<tr>
-   	<td><th id="table">regno</th></td>
-	<td><th id="table">name</th></td>
-	<td><th id="table">major</th></td>
-	<td><th id="table">bdate</th></td>
-</tr>
-</table>
-<h3>COURSE</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">cno</th>
-	<th id="table">cname</th>
-	<th id="table">dept</th>
-</tr>
-</table>
-<h3>ENROLL</h3>
- <table id="table" style="width:100%" >
-<tr>
-   	<th id="table">regno</th>
-	<th id="table">cno</th>
-	<th id="table">sem</th>
-	<th id="table">marks</th>
-</tr>
-</table>
-<h3>BOOK_ADOPTION</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">cno</th>
-	<th id="table">sem</th>
-	<th id="table">book_isbn</th>
-</tr>
-</table>
-<h3>TEXT</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">book_isbn</th>
-	<th id="table">book-title</th>
-	<th id="table">publisher</th>
-	<th id="table">author</th>
-</tr>
-</table>
-</br>
-</div>
-<div class="modal-content" id="modal-content4">
-<h1 align="center">Book-dealer database</h1>
-<h3>AUTHOR</h3>  
- <table id="table" style="width:100%" >
-<tr>
-   	<td><th id="table">author-id</th></td>
-	<td><th id="table">name</th></td>
-	<td><th id="table">city</th></td>
-	<td><th id="table">country</th></td>
-</tr>
-</table>
-<h3>PUBLISHER</h3>
-<table id="table" style="width:100%" >
-<tr>
-	<td><th id="table">publisher-id</th></td>
-	<td><th id="table">name</th></td>
-	<td><th id="table">city</th></td>
-	<td><th id="table">country</th></td>
-</tr>
-</table>
-<h3>CATALOG</h3>
- <table id="table" style="width:100%" >
-<tr>
-   	<th id="table">id</th>
-	<th id="table">year</th>
-	<th id="table">price</th>
-</tr>
-</table>
-<h3>CATEGORY</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">book-id</th>
-	<th id="table">title</th>
-	<th id="table">author-id</th>
-	<th id="table">publisher-id</th>
-	<th id="table">category-id</th>
-	<th id="table">description</th>
-</tr>
-</table>
-<h3>order-details</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">order-no</th>
-	<th id="table">book-id</th>
-	<th id="table">quantity</th>
-</tr>
-</table>
-<br/>
-</div>
-<div class="modal-content" id="modal-content5">
-<h1 align="center">Bank database</h1>
-<h3>BRANCH</h3>
- <table id="table" style="width:100%" >
-<tr>
-   	<td><th id="table">branch-name</th></td>
-	<td><th id="table">branch-city</th></td>
-	<td><th id="table">assets</th></td>
-</tr>
-</table>
-<h3>ACCOUNTS</h3>
-<table id="table" style="width:100%" >
-<tr>
-	<td><th id="table">accno</th></td>
-	<td><th id="table">branch-name</th></td>
-	<td><th id="table">balance</th></td>
-</tr>
-</table>
-<h3>DEPOSITOR</h3>
- <table id="table" style="width:100%" >
-<tr>
-   	<th id="table">customer-name</th>
-	<th id="table">accno</th>
-</tr>
-</table>
-<h3>CUSTOMER</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">customer-name</th>
-	<th id="table">customer-street</th>
-	<th id="table">customer-city</th>
-</tr>
-</table>
-<h3>LOAN</h3>
-<table id="table" style="width:100%" >
-<tr>
-   	<th id="table">loan-no</th>
-	<th id="table">branch-name</th>
-	<th id="table">amount</th>
-</tr>
-</table>
+			<table id="table" style="width:100%">
+				<tr>
+					<td>
+						<th id="table">regno</th>
+					</td>
+					<td>
+						<th id="table">name</th>
+					</td>
+					<td>
+						<th id="table">major</th>
+					</td>
+					<td>
+						<th id="table">bdate</th>
+					</td>
+				</tr>
+			</table>
+			<h3>COURSE</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">cno</th>
+					<th id="table">cname</th>
+					<th id="table">dept</th>
+				</tr>
+			</table>
+			<h3>ENROLL</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">regno</th>
+					<th id="table">cno</th>
+					<th id="table">sem</th>
+					<th id="table">marks</th>
+				</tr>
+			</table>
+			<h3>BOOK_ADOPTION</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">cno</th>
+					<th id="table">sem</th>
+					<th id="table">book_isbn</th>
+				</tr>
+			</table>
+			<h3>TEXT</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">book_isbn</th>
+					<th id="table">book-title</th>
+					<th id="table">publisher</th>
+					<th id="table">author</th>
+				</tr>
+			</table>
+			</br>
+		</div>
+		<div class="modal-content" id="modal-content4">
+			<h1 align="center">Book-dealer database</h1>
+			<h3>AUTHOR</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<td>
+						<th id="table">author-id</th>
+					</td>
+					<td>
+						<th id="table">name</th>
+					</td>
+					<td>
+						<th id="table">city</th>
+					</td>
+					<td>
+						<th id="table">country</th>
+					</td>
+				</tr>
+			</table>
+			<h3>PUBLISHER</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<td>
+						<th id="table">publisher-id</th>
+					</td>
+					<td>
+						<th id="table">name</th>
+					</td>
+					<td>
+						<th id="table">city</th>
+					</td>
+					<td>
+						<th id="table">country</th>
+					</td>
+				</tr>
+			</table>
+			<h3>CATALOG</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">id</th>
+					<th id="table">year</th>
+					<th id="table">price</th>
+				</tr>
+			</table>
+			<h3>CATEGORY</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">book-id</th>
+					<th id="table">title</th>
+					<th id="table">author-id</th>
+					<th id="table">publisher-id</th>
+					<th id="table">category-id</th>
+					<th id="table">description</th>
+				</tr>
+			</table>
+			<h3>order-details</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">order-no</th>
+					<th id="table">book-id</th>
+					<th id="table">quantity</th>
+				</tr>
+			</table>
+			<br/>
+		</div>
+		<div class="modal-content" id="modal-content5">
+			<h1 align="center">Bank database</h1>
+			<h3>BRANCH</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<td>
+						<th id="table">branch-name</th>
+					</td>
+					<td>
+						<th id="table">branch-city</th>
+					</td>
+					<td>
+						<th id="table">assets</th>
+					</td>
+				</tr>
+			</table>
+			<h3>ACCOUNTS</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<td>
+						<th id="table">accno</th>
+					</td>
+					<td>
+						<th id="table">branch-name</th>
+					</td>
+					<td>
+						<th id="table">balance</th>
+					</td>
+				</tr>
+			</table>
+			<h3>DEPOSITOR</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">customer-name</th>
+					<th id="table">accno</th>
+				</tr>
+			</table>
+			<h3>CUSTOMER</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">customer-name</th>
+					<th id="table">customer-street</th>
+					<th id="table">customer-city</th>
+				</tr>
+			</table>
+			<h3>LOAN</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">loan-no</th>
+					<th id="table">branch-name</th>
+					<th id="table">amount</th>
+				</tr>
+			</table>
 
-<h3>BORROWER</h3>
-<table id="table" style="width:100%" >
-<tr>
-	<th id="table">customer-name</th>
-   	<th id="table">loan-no</th>
-</tr>
-<br/>
-</div>
-</div>
+			<h3>BORROWER</h3>
+			<table id="table" style="width:100%">
+				<tr>
+					<th id="table">customer-name</th>
+					<th id="table">loan-no</th>
+				</tr>
+				<br/>
+		</div>
+	</div>
 </body>
+
 </html>
