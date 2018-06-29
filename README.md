@@ -1,4 +1,4 @@
-# my-repo
+# DataBase Management Systems - Demo
 DataBase Management Systems Project, A GUI Front-End for mySQL has Predefined Databases and queries, and user may also enter custom queries on any of the database.
 
 ## Requirements
